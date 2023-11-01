@@ -1,5 +1,5 @@
-class Cart < ApplicationRecord\
-    has_many:line_item, dependent: :destroy
+class Cart < ApplicationRecord
+    has_many :line_items, dependent: :destroy
     def total_price
         line_items.sum { |item| item.total_price }
         end
