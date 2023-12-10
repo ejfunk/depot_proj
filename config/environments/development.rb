@@ -60,6 +60,9 @@ Rails.application.configure do
   config.assets.quiet = true
 
     config.action_mailer.delivery_method = :test
+
+    config.active_storage.service = :local
+
   
 
   # Raises error for missing translations.
